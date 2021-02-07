@@ -1,0 +1,66 @@
+create table workouts_jan_feb(
+workout_type varchar(100),
+full_date date,
+distance numeric(10,5),
+avg_hr int,
+max_hr int,
+active_cal numeric(10,5),
+total_cal numeric(10,5)
+);
+drop table workouts_jan_feb;
+delete from workouts_jan_feb;
+select * from workouts_jan_feb;
+
+insert into workouts_jan_feb (workout_type, full_date, distance, avg_hr, max_hr, active_cal, total_cal) 
+values(
+('Boxing','2/27/2020',2.394524382,137,150,456.932,576.763),
+('High Intensity Interval Training','2/26/2020',0,147,175,543.771,663.035),
+('Boxing','2/25/2020',2.545940582,135,159,509.552,634.706),
+('High Intensity Interval Training','2/24/2020',0,140,168,490.964,609.298),
+('High Intensity Interval Training','2/24/2020',0,147,168,429,518.113),
+('Boxing','2/23/2020',3.10753692,138,148,507.524,631.289),
+('High Intensity Interval Training','2/22/2020',0,118,126,158.593,218.633),
+('Boxing','2/22/2020',2.765694637,131,150,427.989,541.914),
+('High Intensity Interval Training','2/20/2020',0,111,132,307.914,416.664),
+('High Intensity Interval Training','2/19/2020',0,139,159,403.895,502.486),
+('Boxing','2/18/2020',2.618630509,148,162,531.025,650.883),
+('Boxing','2/17/2020',3.056725026,142,162,568.822,695.741),
+('High Intensity Interval Training','2/16/2020',0,125,138,587.789,750.367),
+('Boxing','2/15/2020',3.903495584,133,154,677.483,827.022),
+('Outdoor Running','2/15/2020',3.426710762,113,131,226.704,310.874),
+('Boxing','2/14/2020',2.654483492,138,161,575.789,711.764),
+('High Intensity Interval Training','2/12/2020',0,138,156,553.965,686.444),
+('Boxing','2/10/2020',3.395364227,128,155,495.656,627.588),
+('High Intensity Interval Training','2/9/2020',0,141,155,381.513,480.076),
+('High Intensity Interval Training','2/7/2020',0,152,170,563.493,684.048),
+('High Intensity Interval Training','2/7/2020',0,152,170,562,675.963),
+('High Intensity Interval Training','2/6/2020',0,146,181,636.243,790.075),
+('High Intensity Interval Training','2/6/2020',0,149,181,509,604.974),
+('High Intensity Interval Training','2/3/2020',0,156,180,600.577,724.828),
+('High Intensity Interval Training','2/3/2020',0,156,180,604,705.571),
+('High Intensity Interval Training','2/2/2020',0,142,161,501.089,625.692),
+('High Intensity Interval Training','2/2/2020',0,136,161,450,545.303),
+('High Intensity Interval Training','1/30/2020',0,139,162,521.92,648.977),
+('High Intensity Interval Training','1/28/2020',0,145,169,523.611,637.971),
+('High Intensity Interval Training','1/28/2020',0,144,169,487,589.328),
+('High Intensity Interval Training','1/27/2020',0,155,173,510.153,613.547),
+('High Intensity Interval Training','1/27/2020',0,150,173,525,639.748),
+('High Intensity Interval Training','1/24/2020',0,156,170,550.072,657.501),
+('High Intensity Interval Training','1/24/2020',0,148,170,545,655.564),
+('High Intensity Interval Training','1/22/2020',0,149,173,568.41,672.144),
+('High Intensity Interval Training','1/22/2020',0,149,173,547,664.229),
+('High Intensity Interval Training','1/21/2020',0,150,172,607.589,740.033),
+('High Intensity Interval Training','1/21/2020',0,151,172,566,668.528),
+('High Intensity Interval Training','1/19/2020',0,151,170,788.085,946.451),
+('High Intensity Interval Training','1/19/2020',0,149,170,782,930.929),
+('High Intensity Interval Training','1/17/2020',0,0,0,543,664.07),
+('High Intensity Interval Training','1/16/2020',0,153,181,560.588,678.537),
+('High Intensity Interval Training','1/16/2020',0,143,181,557,669.729),
+('High Intensity Interval Training','1/7/2020',0,154,162,591.865,693.253),
+('High Intensity Interval Training','1/7/2020',0,154,162,561,662.951),
+('High Intensity Interval Training','1/4/2020',0,157,175,557.377,650.742),
+('High Intensity Interval Training','1/4/2020',0,129,175,563,695.465),
+('High Intensity Interval Training','1/2/2020',0,148,167,557.609,662.585),
+('High Intensity Interval Training','1/2/2020',0,140,167,522,620.982)
+
+);
