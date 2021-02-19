@@ -23,3 +23,8 @@ from active_cal
 group by extract(year from full_date), extract(month from full_date)
 order by extract(year from full_date), extract(month from full_date);
 
+--Raw comparison of workouts to total cal burnt in a day.
+select workouts_jan_feb.workout_type, workouts_jan_feb.total_cal as workout_cal, active_cal.active_cal as daily_cal, active_cal.full_date
+from workouts_jan_feb
+join active_cal
+on workouts_jan_feb.full_date = active_cal.full_date;
